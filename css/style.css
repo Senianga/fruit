@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -20,10 +21,9 @@ a, btn {
   background: rgb(255, 249, 242);
   background: linear-gradient(90deg, rgb(255, 249, 242) 60%, rgb(253, 184, 39) 60%);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   width: 100vw;
   z-index: 1;
-  overflow-x: hidden;
 }
 
 .container {
@@ -105,7 +105,7 @@ a, btn {
   display: flex;
   max-width: 1220px;
   padding-left: 10px;
-  margin: 0 auto;
+  margin: left;
 }
 
 .container-main {
@@ -122,6 +122,7 @@ h1 {
   color: rgb(35, 53, 6);
   max-width: 591px;
   margin-bottom: 60px;
+  z-index: 2;
 }
 
 .title span {
@@ -181,8 +182,9 @@ h1 {
 
 .heare-image {
   position: absolute;
-  top: -212px;
-  left: -278px;
+  height: 100%;
+  top: -132px;
+  left: 550px;
   z-index: 0;
 }
 
@@ -206,8 +208,13 @@ h1 {
   h1 {
     margin-bottom: 50px;
   }
+  .order {
+    margin-bottom: 50px;
+  }
   .heare-image {
-    left: -265px;
+    height: 90%;
+    top: -80px;
+    left: 565px;
   }
 }
 /*--------------------------------max-width 1025px----------------------------------*/
@@ -253,18 +260,15 @@ h1 {
     z-index: 2;
     text-shadow: 0 0 4px #fff, 0 0 4px #fff;
   }
-  .order {
-    margin-bottom: 140px;
-  }
   .order:after {
     content: "";
     background-position: 10px 4px;
     height: 16px;
   }
   .heare-image {
-    max-width: 180%;
-    top: -192px;
-    left: -450px;
+    height: 110%;
+    top: -70px;
+    left: 300px;
   }
 }
 /*----------------------max-width 768px------------------*/
@@ -272,11 +276,12 @@ h1 {
   .wrapper {
     background: linear-gradient(rgba(255, 249, 242, 0.6), rgba(255, 249, 242, 0.6)), url(../Images/header-image.png);
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: 100%;
     background-position: 70% 30%;
     height: 100vh;
     z-index: 1;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   .container {
     max-width: 100%;
@@ -402,8 +407,8 @@ h1 {
 @media (max-width: 480.98px) {
   .wrapper {
     display: block;
-    background-size: 250%;
-    background-position: 80% 40%;
+    background-size: 120%;
+    background-position: cover;
     width: 100vw;
     height: 100vh;
   }
