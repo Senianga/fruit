@@ -19,7 +19,7 @@ a, btn {
 .wrapper {
    display: block;
    background: rgb(255,249,242);
-   background: linear-gradient(90deg, rgba(255,249,242,1) 60%, rgba(253,184,39,1) 60%);
+   background: linear-gradient(90deg, rgba(255,249,242,1) 68%, rgba(253,184,39,1) 68%);
    background-position: center;
    background-size: cover;
    width: 100vw;
@@ -107,6 +107,10 @@ a, btn {
    padding: 20px 15px 13px 15px ;
 }
 
+.btn-box {
+   display: none;
+}
+
 .main {
    position: relative;
    display: flex;
@@ -189,24 +193,17 @@ h1 {
 
 .heare-image {
    position: absolute;
-   height: 100%;
+   height: 110%;
    top: -132px;
-   left: 550px;
+   left: 600px;
    z-index: 0;
 }
 
 .features {
    margin: 0 auto;
 }
-.feature-container {
-   max-width: 1220px;
-   padding-left: 10px;
-   padding-right: 10px;
-   margin: 0 auto;
-   margin-top: 150px;
-}
+
 .feature-title {
-   padding: 0 10px;
    font-size: 70px;
    line-height: 82px;
    color: rgba(35, 53, 6, 1);
@@ -215,11 +212,14 @@ h1 {
 .card-box {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-between;
+   margin-left: -30px;
 
 }
 .fruite-card {
    max-width: 270px;
+   padding-left: 30px;
+   
 }
 .card-item {
    max-width: 270px;
@@ -281,7 +281,7 @@ h1 {
 
 @media (max-width: 1440.98px) {
    .wrapper{
-      background: linear-gradient(90deg, rgba(255,249,242,1) 63%, rgba(253,184,39,1) 63%);
+      background: linear-gradient(90deg, rgba(255,249,242,1) 75%, rgba(253,184,39,1) 75%);
    }
 
    .header {
@@ -290,9 +290,7 @@ h1 {
       margin-bottom: 100px;
    }
 
-   .burger {
-      display: none;
-   }
+   
    .container {
       max-width: 1220px;
       padding-right:10px;
@@ -307,19 +305,19 @@ h1 {
    }
       
    .heare-image {
-      height: 90%;
-      top: -80px;
+      height: 110%;
+      top: -85px;
       left: 565px;
    }
 }
 
 
-/*--------------------------------max-width 1025px----------------------------------*/
+/*--------------------------------max-width 1024px----------------------------------*/
 
 
 @media (max-width: 1024.98px) {
    .wrapper{
-      background: linear-gradient(90deg, rgba(255,249,242,1) 60%, rgba(253,184,39,1) 60%);
+      background: linear-gradient(90deg, rgba(255,249,242,1) 73%, rgba(253,184,39,1) 73%);
    }
 
    .container {
@@ -385,21 +383,18 @@ h1 {
 
    .feature-title {
       max-width: 900px;
-      padding: 0 60px;
       margin-bottom: 85px;
       font-size: 65px;
       font-weight: 900;
    }
 
    .card-box {
-      margin: 0 auto;
-      margin-left: -20px;
-      max-width: 920px;
-      padding: 0 30px;
-   }
-
-   .fruite-card {
-      padding-left: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      max-width: 1024px;
+      
    }
 
    .description {
@@ -410,20 +405,18 @@ h1 {
 
 
 /*----------------------max-width 768px------------------*/
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .wrapper{
       background: linear-gradient(rgba(255,249,242,0.6), rgba(255,249,242,0.6)), url(../images/header-image.png);
       background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: 70% 30%;
-      height: 100vh;
+      background-size: 80%;
+      background-position: 60% 10%;
       z-index: 1;
-      margin: 0 auto;
       overflow-x: hidden;
    }
    
    .container {
-      max-width: 100%;
+      max-width: 90%;
       padding: 0 15px;
    }
 
@@ -452,7 +445,10 @@ h1 {
       padding: 20px 15px 13px 15px ;
    }
    
-
+   .btn-box {
+      display: block;
+      margin-right: 20px;
+   }
    .btn {
       display: block;
       width: 50px;
@@ -579,22 +575,8 @@ h1 {
       line-height: 82px;
       color: rgb(35, 53, 6);
       margin-bottom: 45px;
-      text-align: center;
+      text-align: left;
    }
-
-   .card-box {
-      display: flex;
-      justify-content: center;
-      margin-left: -30px;
-   }
-
-   .fruite-card {
-      padding-left: 30px;
-   }
-
-   
-
-
 }
 
 /*--------------------   max-width 481px-----------------*/
@@ -606,7 +588,7 @@ h1 {
       background-size: 120%;
       background-position: cover;
       width: 100vw;
-      height: 100vh;
+      
    }
 
    .container {
@@ -629,7 +611,6 @@ h1 {
       width: 35px;
       height: 35px;
       border-radius: 10px; 
-      margin-right: 10px;
       box-shadow: 1px 1px 1px #233506;
    }
 
@@ -668,7 +649,7 @@ h1 {
       margin-bottom: 25px;
       padding-right: 10px;   
       line-height: 58px;
-      text-shadow: 1px 1px 1px  #233506;
+      text-shadow: 2px 2px 1px  #fff;
    }
 
    .title-text {
@@ -682,17 +663,20 @@ h1 {
       margin-bottom: 40px;
    }
 
-   .features {
-      margin-top: -450px;
-   }
-
+   
    .feature-title {
-      font-size: 50px;
+      font-size: 38px;
       font-weight: 900;
-      line-height: 82px;
+      line-height: 45px;
       color: rgb(35, 53, 6);
       margin-bottom: 45px;
       text-align: center;
    }
+
+   .fruite-card {
+      margin: 0 auto;
+   }
 }
-   
+
+
+
