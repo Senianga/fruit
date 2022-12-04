@@ -416,7 +416,8 @@ h1 {
    }
    
    .container {
-      max-width: 90%;
+      justify-content: center;
+      align-items: center;
       padding: 0 15px;
    }
 
@@ -562,7 +563,6 @@ h1 {
    }
 
    .feature-container {
-      max-width: 90vw;
       padding-left: 10px;
       padding-right: 5px;
       margin: 0 auto;
@@ -575,7 +575,11 @@ h1 {
       line-height: 82px;
       color: rgb(35, 53, 6);
       margin-bottom: 45px;
-      text-align: left;
+      text-align: center;
+   }
+
+   .card-box  {
+      justify-content: center;
    }
 }
 
