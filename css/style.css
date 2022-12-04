@@ -275,6 +275,81 @@ h1 {
   color: #FDB827;
 }
 
+.how-it__works {
+  background-color: #FFF9F2;
+}
+
+.hiw-box {
+  padding-top: 56px;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.hiw-desription__area {
+  margin-left: 140px;
+}
+
+.hiw-cards-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.hiw-title {
+  color: #02283F;
+  margin-top: 20px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 82px;
+  margin-bottom: 40px;
+}
+
+.hiw-description {
+  color: rgba(42, 53, 71, 0.75);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+}
+
+.hiw-items__box {
+  display: flex;
+}
+
+.hiw-text__block {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.title {
+  color: #02283F;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.hiw-description {
+  margin-bottom: 60px;
+}
+
+.hiw-items__box {
+  margin-bottom: 40px;
+}
+
+.hiw-text {
+  color: rgba(2, 40, 63, 0.67);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  margin: 0;
+}
+
+.cirkel-left {
+  position: absolute;
+  left: -20px;
+}
+
 /*---------------------min 1440 px------------------------------------------------*/
 @media (max-width: 1440.98px) {
   .wrapper {
