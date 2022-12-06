@@ -26,6 +26,17 @@ a, btn {
   z-index: 1;
 }
 
+@media (max-width: 1921px) {
+  .wrapper {
+    display: block;
+    background: rgb(255, 249, 242);
+    background: linear-gradient(90deg, rgb(255, 249, 242) 68%, rgb(253, 184, 39) 68%);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    z-index: 1;
+  }
+}
 .container {
   max-width: 1220px;
   padding-left: 10px;
@@ -400,8 +411,18 @@ h1 {
     position: absolute;
     left: -260px;
   }
+  .colage {
+    display: block;
+    z-index: 1;
+  }
+  .hiw-desription__area {
+    margin-left: 90px;
+  }
+  /*--------------------------------max-width 1024px----------------------------------*/
+  /*----------------------max-width 768px------------------*/
+  /*--------------------   max-width 481px-----------------*/
 }
-@media (max-width: 1300px) {
+@media (max-width: 1440.98px) and (max-width: 1300px) {
   .cirkel-left {
     display: none;
   }
@@ -413,15 +434,14 @@ h1 {
     max-width: 100%;
   }
 }
-@media (max-width: 1179px) {
+@media (max-width: 1440.98px) and (max-width: 1179px) {
   .container {
     margin: 0 30px 0 30px;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
-/*--------------------------------max-width 1024px----------------------------------*/
-@media (max-width: 1024.98px) {
+@media (max-width: 1440.98px) and (max-width: 1024.98px) {
   .wrapper {
     background: linear-gradient(90deg, rgb(255, 249, 242) 72%, rgb(253, 184, 39) 72%);
   }
@@ -516,8 +536,7 @@ h1 {
     z-index: 0;
   }
 }
-/*----------------------max-width 768px------------------*/
-@media (max-width: 768.98px) {
+@media (max-width: 1440.98px) and (max-width: 768.98px) {
   .wrapper {
     background: linear-gradient(rgba(255, 249, 242, 0.6), rgba(255, 249, 242, 0.6)), url(../images/header-image.png);
     background-repeat: no-repeat;
@@ -681,8 +700,7 @@ h1 {
     font-weight: 800;
   }
 }
-/*--------------------   max-width 481px-----------------*/
-@media (max-width: 480.98px) {
+@media (max-width: 1440.98px) and (max-width: 480.98px) {
   .wrapper {
     display: block;
     background-size: 120%;
@@ -793,6 +811,9 @@ h1 {
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 20px;
+  }
+  .hiw-description {
+    font-weight: 600;
   }
   .confirm {
     display: block;

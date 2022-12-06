@@ -27,14 +27,16 @@ a, btn {
    
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1921px) {
    .wrapper {
       display: block;
-      background: linear-gradient(90deg, rgba(255,249,242,1) 67%, rgba(253,184,39,1) 67%);
+      background: rgb(255,249,242);
+      background: linear-gradient(90deg, rgba(255,249,242,1) 68%, rgba(253,184,39,1) 68%);
       background-position: center;
       background-size: cover;
       width: 100vw;
       z-index: 1;
+      
    }
 }
 
@@ -932,6 +934,7 @@ h1 {
       display: block;
       max-width: 85%;
    }
+}
 }
 
 
