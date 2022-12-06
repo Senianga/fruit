@@ -19,7 +19,7 @@ a, btn {
 .wrapper {
    display: block;
    background: rgb(255,249,242);
-   background: linear-gradient(90deg, rgba(255,249,242,1) 68%, rgba(253,184,39,1) 68%);
+   background: linear-gradient(90deg, rgba(255,249,242,1) 63.5%, rgba(253,184,39,1) 63.5%);
    background-position: center;
    background-size: cover;
    width: 100vw;
@@ -27,8 +27,19 @@ a, btn {
    
 }
 
+@media (max-width: 1919.98px) {
+   .wrapper {
+      display: block;
+      background: linear-gradient(90deg, rgba(255,249,242,1) 67%, rgba(253,184,39,1) 67%);
+      background-position: center;
+      background-size: cover;
+      width: 100vw;
+      z-index: 1;
+   }
+}
+
 .container {
-   max-width: 63.5%;
+   max-width: 1220px;
    padding-left: 10px;
    padding-right: 10px;
    margin: 0 auto;
@@ -38,7 +49,7 @@ a, btn {
 .header {
    padding-top: 62px;
    padding-left: 10px;
-   width: 100%;
+   max-width: 1220px;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -210,10 +221,13 @@ h1 {
    margin-bottom: 85px;
 }
 .card-box {
+   max-width: 1220px;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
    margin-left: -30px;
+   margin-bottom: 70px;
+   margin: 0 auto; 
 
 }
 .fruite-card {
@@ -279,7 +293,7 @@ h1 {
 }
 
 .how-it__works {
-   background-color: #FFF9F2;;
+   background-color: #FFF9F2;
 }
 .hiw-box {
    padding-top: 56px;
@@ -297,6 +311,7 @@ h1 {
    display: flex;
    flex-direction: column;
 }
+
 .hiw-title {
    color: #02283F;
    margin-top: 20px;
@@ -305,12 +320,14 @@ h1 {
    line-height: 82px;
    margin-bottom: 40px;
 }
+
 .hiw-description {
    color: rgba(42, 53, 71, 0.75);
    font-weight: 400;
    font-size: 18px;
    line-height: 170%;
 }
+
 .hiw-items__box {
    display: flex
 }
@@ -319,21 +336,27 @@ h1 {
    display: flex;
    flex-direction: column;
    margin-left: 32px;
-   
 }
 
-.title {
+.title__description {
    color: #02283F;
    font-size: 20px;
    line-height: 25px;
    padding-bottom: 5px;
    margin: 0;
 }
+
 .hiw-description {
    margin-bottom: 60px;
 }
+
 .hiw-items__box {
    margin-bottom: 40px;
+}
+
+.option {
+   width: 62px;
+   height: 62px;
 }
 
 .hiw-text {
@@ -348,11 +371,26 @@ h1 {
    position: absolute;
    left: -20px;
 }
+
+.colage {
+   max-width: 536px;
+   object-fit: contain;
+}
+
+.personal {
+   display: none;
+}
+
+.lady, .confirm, .shipping, .choise {
+   display: none;
+}
+
+
 /*---------------------min 1440 px------------------------------------------------*/
 
 @media (max-width: 1440.98px) {
    .wrapper{
-      background: linear-gradient(90deg, rgba(255,249,242,1) 75%, rgba(253,184,39,1) 75%);
+      background: linear-gradient(90deg, rgba(255,249,242,1) 73.5%, rgba(253,184,39,1) 73.5%);
    }
 
    .header {
@@ -380,15 +418,50 @@ h1 {
       top: -85px;
       left: 565px;
    }
+
+   .cirkel-left {
+      position: absolute;
+      left: -260px;
+   }
+
+   .colage {
+      display: block;
+      z-index: 1;
+
+   
 }
 
+.hiw-desription__area {
+   margin-left: 90px;
+}
 
+@media (max-width: 1300px) {
+   .cirkel-left {
+      display: none;
+   }
+   .colage {
+      display: none;
+      
+   }
+   .personal {
+      display: block;
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 1179px) {
+   .container {
+      margin: 0 30px 0 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+   }
+}
 /*--------------------------------max-width 1024px----------------------------------*/
 
 
 @media (max-width: 1024.98px) {
    .wrapper{
-      background: linear-gradient(90deg, rgba(255,249,242,1) 73%, rgba(253,184,39,1) 73%);
+      background: linear-gradient(90deg, rgba(255,249,242,1) 72%, rgba(253,184,39,1) 72%);
    }
 
    .container {
@@ -463,8 +536,12 @@ h1 {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 10px;
       max-width: 1024px;
+   }
+
+   .fruite-card {
+      max-width: 270px;
+      
       
    }
 
@@ -472,6 +549,38 @@ h1 {
       font-size: 18px;
       line-height: 20px;
    }
+
+   .hiw-box {
+      max-width: 90%;
+      padding: 80px 10px ;
+      margin: 0 auto;
+   }
+
+   .hiw-box {
+      padding-top: 80px;
+      z-index: 1;
+   }
+
+   .colage {
+      display: none; 
+      
+   }
+
+   .hiw-desription__area {
+      margin-bottom: 50px;
+      margin-left: 60px;
+   }
+
+   .personal {
+      max-width: 536px;
+      object-fit: contain;
+   }
+
+   .cirkel-left {
+      z-index: 0;
+   }
+
+   
 }
 
 
@@ -651,6 +760,23 @@ h1 {
 
    .card-box  {
       justify-content: center;
+      margin-bottom: 30px;
+   }
+
+   .hiw-box {
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+   }
+
+   .hiw-desription {
+      font-size: 16px;
+      
+   }
+
+   .hiw-text {
+      font-size: 13px;
+      font-weight: 800;
    }
 }
 
@@ -738,8 +864,9 @@ h1 {
       margin-bottom: 40px;
    }
 
-   
    .feature-title {
+
+      padding: auto;
       font-size: 38px;
       font-weight: 900;
       line-height: 45px;
@@ -749,7 +876,61 @@ h1 {
    }
 
    .fruite-card {
+      padding: 0;
+   }
+
+   .hiw-content {
       margin: 0 auto;
+      
+   }
+
+   .hiw-title {
+      padding-top: 30px;
+      font-size: 40px;
+      margin-bottom: 25px;
+      padding-right: 10px;   
+      line-height: 58px;
+      font-weight: 900;
+      
+   }
+
+   .fruite-card {
+      margin: 0 auto;
+   }
+
+   .personal {
+      display: none;
+   }
+
+   .lady {
+      display: block;
+      max-width: 85%;
+   }
+
+   .choise {
+      display: block;
+      max-width: 85%;
+   }
+
+   .hiw-text {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      margin-bottom: 20px;
+   }
+
+   .hiw-description {
+      font-weight: 600;
+   }
+
+   .confirm {
+      display: block;
+      max-width: 85%;
+   }
+
+   .shipping {
+      display: block;
+      max-width: 85%;
    }
 }
 
