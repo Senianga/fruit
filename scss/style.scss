@@ -374,6 +374,7 @@ h1 {
    left: -20px;
 }
 
+
 .colage {
    max-width: 536px;
    object-fit: contain;
@@ -496,12 +497,29 @@ h1 {
    .colage {
       display: block;
       z-index: 1;
+   }
 
-   
-}
-
-.hiw-desription__area {
+   .hiw-desription__area {
    margin-left: 90px;
+   }
+
+   .assorti {
+      position: absolute;
+      left: 450px;
+      margin-top: 114px;
+      margin-left: 126px;
+      z-index: 1;
+   }
+
+   .cirkel-right {
+      display: none;
+   }
+
+   .cirkel-left {
+      display: none;
+   }
+
+
 }
 
 @media (max-width: 1300px) {
@@ -650,7 +668,9 @@ h1 {
    }
 
    .about-content__box {
+      max-width: 400px;
       z-index: 5;
+      margin-top: 220px;
    }
 
    .about-container__content {
@@ -659,13 +679,14 @@ h1 {
       max-width: 90%;
       margin: 0 auto;
       
+      
    }
 
    .assorti {
       position: absolute;
       left: 100px;
       margin-top: 114px;
-      margin-left: 126px;
+      margin-left: 146px;
       z-index: 0;
       filter: blur(5px);
    }
@@ -684,10 +705,7 @@ h1 {
       font-weight: 700;
    }
 
-   .cirkel-left,
-   .cirkel-right {
-      display: none;
-   }
+   
 
    
 }
@@ -717,7 +735,7 @@ h1 {
    }
    
    .contact {
-      font-size: 14px;
+      font-size: 18px;
       line-height: 14px; 
    }
    
@@ -802,7 +820,7 @@ h1 {
    }
 
    h1 {
-      font-size: 60px;
+      font-size: 65px;
       text-align: center;
       color: rgb(35, 53, 6);
       text-align: left;
@@ -825,7 +843,7 @@ h1 {
 
    .order {
       color: rgba(255, 255, 255, 1);
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 500;
       line-height: 25px;
       padding: 15px  15px;
@@ -883,9 +901,26 @@ h1 {
       
    }
 
+   .about-content__box {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+      
+   }
+
    .hiw-text {
       font-size: 13px;
       font-weight: 800;
+   }
+
+   .assorti {
+      left: -125px;
+      opacity: .6;
+
+   }
+
+   .about-read__more {
+      box-shadow: 1px 1px 2px #fff;
    }
 }
 
@@ -918,6 +953,8 @@ h1 {
    }
 
    .btn {
+      position: relative;
+      left: 25px;
       width: 35px;
       height: 35px;
       border-radius: 10px; 
@@ -1032,6 +1069,19 @@ h1 {
       font-weight: 600;
    }
 
+   .hiw-desription__area {
+      margin-left: 0;
+   }
+
+   .hiw-cards-block {
+      display: block;
+   }
+
+   .hiv-items__box {
+      display: block;
+      padding-bottom: 25px;
+   }
+
    .confirm {
       display: block;
       max-width: 85%;
@@ -1041,8 +1091,57 @@ h1 {
       display: block;
       max-width: 85%;
    }
+
+   .about-content__box {
+      margin-top: 50px;
+   }
+
+   .about-us {
+      font-size: 40px;
+      text-align: center;
+   }
+
+   .about-text {
+      
+      font-size: 16px;
+   }
+
+   .assorti {
+      width: 500px;
+      top: -90px;
+      left: -200px;
+   }
+
+   .about-read__more {
+      position: relative;
+      left: 100px;
+      font-size: 14px;
+      padding: 5px  5px;
+      margin-bottom: 60px;
+      }
+
+   .buy {
+      font-size: 14px;
+      padding: 10px  10px;
+
+   }
+
+   .order {
+      position: relative;
+      left: 100px;
+   }
+
+   .option {
+      width:50px;
+      height: 50px;
+   }
+
 }
-}
+
+
+
+
+
 
 
 

@@ -489,11 +489,21 @@ h1 {
   .hiw-desription__area {
     margin-left: 90px;
   }
-  /*--------------------------------max-width 1024px----------------------------------*/
-  /*----------------------max-width 768px------------------*/
-  /*--------------------   max-width 481px-----------------*/
+  .assorti {
+    position: absolute;
+    left: 450px;
+    margin-top: 114px;
+    margin-left: 126px;
+    z-index: 1;
+  }
+  .cirkel-right {
+    display: none;
+  }
+  .cirkel-left {
+    display: none;
+  }
 }
-@media (max-width: 1440.98px) and (max-width: 1300px) {
+@media (max-width: 1300px) {
   .cirkel-left {
     display: none;
   }
@@ -505,14 +515,15 @@ h1 {
     max-width: 100%;
   }
 }
-@media (max-width: 1440.98px) and (max-width: 1179px) {
+@media (max-width: 1179px) {
   .container {
     margin: 0 30px 0 30px;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
-@media (max-width: 1440.98px) and (max-width: 1024.98px) {
+/*--------------------------------max-width 1024px----------------------------------*/
+@media (max-width: 1024.98px) {
   .wrapper {
     background: linear-gradient(90deg, rgb(255, 249, 242) 68%, rgb(253, 184, 39) 68%);
   }
@@ -607,7 +618,9 @@ h1 {
     z-index: 0;
   }
   .about-content__box {
+    max-width: 400px;
     z-index: 5;
+    margin-top: 220px;
   }
   .about-container__content {
     position: relative;
@@ -619,7 +632,7 @@ h1 {
     position: absolute;
     left: 100px;
     margin-top: 114px;
-    margin-left: 126px;
+    margin-left: 146px;
     z-index: 0;
     filter: blur(5px);
   }
@@ -634,12 +647,9 @@ h1 {
     text-shadow: 1px 1px 1px #fff;
     font-weight: 700;
   }
-  .cirkel-left,
-.cirkel-right {
-    display: none;
-  }
 }
-@media (max-width: 1440.98px) and (max-width: 768.98px) {
+/*----------------------max-width 768px------------------*/
+@media (max-width: 768.98px) {
   .wrapper {
     background: linear-gradient(rgba(255, 249, 242, 0.6), rgba(255, 249, 242, 0.6)), url(../images/header-image.png);
     background-repeat: no-repeat;
@@ -659,7 +669,7 @@ h1 {
     z-index: 5;
   }
   .contact {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 14px;
   }
   .contact a {
@@ -728,7 +738,7 @@ h1 {
     display: block;
   }
   h1 {
-    font-size: 60px;
+    font-size: 65px;
     text-align: center;
     color: rgb(35, 53, 6);
     text-align: left;
@@ -749,7 +759,7 @@ h1 {
   }
   .order {
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 25px;
     padding: 15px 15px;
@@ -798,12 +808,25 @@ h1 {
   .hiw-desription {
     font-size: 16px;
   }
+  .about-content__box {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
   .hiw-text {
     font-size: 13px;
     font-weight: 800;
   }
+  .assorti {
+    left: -125px;
+    opacity: 0.6;
+  }
+  .about-read__more {
+    box-shadow: 1px 1px 2px #fff;
+  }
 }
-@media (max-width: 1440.98px) and (max-width: 480.98px) {
+/*--------------------   max-width 481px-----------------*/
+@media (max-width: 480.98px) {
   .wrapper {
     display: block;
     background-size: 120%;
@@ -825,6 +848,8 @@ h1 {
     z-index: 5;
   }
   .btn {
+    position: relative;
+    left: 25px;
     width: 35px;
     height: 35px;
     border-radius: 10px;
@@ -918,6 +943,16 @@ h1 {
   .hiw-description {
     font-weight: 600;
   }
+  .hiw-desription__area {
+    margin-left: 0;
+  }
+  .hiw-cards-block {
+    display: block;
+  }
+  .hiv-items__box {
+    display: block;
+    padding-bottom: 25px;
+  }
   .confirm {
     display: block;
     max-width: 85%;
@@ -925,5 +960,39 @@ h1 {
   .shipping {
     display: block;
     max-width: 85%;
+  }
+  .about-content__box {
+    margin-top: 50px;
+  }
+  .about-us {
+    font-size: 40px;
+    text-align: center;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+  .assorti {
+    width: 500px;
+    top: -90px;
+    left: -200px;
+  }
+  .about-read__more {
+    position: relative;
+    left: 100px;
+    font-size: 14px;
+    padding: 5px 5px;
+    margin-bottom: 60px;
+  }
+  .buy {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .order {
+    position: relative;
+    left: 100px;
+  }
+  .option {
+    width: 50px;
+    height: 50px;
   }
 }
