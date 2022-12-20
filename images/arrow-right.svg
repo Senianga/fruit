@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" width="61" height="61">
+	<title>arrow-left-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M14 13L48 13L48 47L14 47L14 13Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #fdb827 } 
+		.shp1 { fill: #fdb827 } 
+	</style>
+	<path id="Layer" class="shp0" d="M60.5 30.5C60.5 47.09 47.09 60.5 30.5 60.5C13.91 60.5 0.5 47.09 0.5 30.5C0.5 13.91 13.91 0.5 30.5 0.5C47.09 0.5 60.5 13.91 60.5 30.5Z" />
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="Layer" class="shp1" d="M28.17 38.5L26.17 36.5L32.66 30L26.17 23.5L28.17 21.5L36.67 30L28.17 38.5Z" />
+		</g>
+	</g>
+</svg>
