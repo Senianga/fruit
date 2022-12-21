@@ -60,7 +60,9 @@ a, btn {
    z-index: 5;
 }
 
-
+.nav {
+   padding-top: 40px;
+}
 
 .home {
    display: flex;
@@ -304,6 +306,10 @@ h1 {
    display: flex
 }
 
+.hiw-content {
+   position: relative;
+}
+
 .hiw-desription__area {
    margin-left: 140px;
    
@@ -372,12 +378,14 @@ h1 {
 .cirkel-left {
    position: absolute;
    left: -20px;
+   top: 1;
 }
 
 
 .colage {
    max-width: 536px;
    object-fit: contain;
+   margin-bottom: 56px;
 }
 
 .personal {
@@ -404,7 +412,7 @@ h1 {
    justify-content: flex-start;
    align-items: left;
    margin-top: 250px;
-   margin-bottom: 40px;
+   
 }
 .about-us {
    color: #02283F;
@@ -458,9 +466,14 @@ h1 {
 .review-container {
    background-color: #FFF9F2;
    height: 750px;
+   padding-bottom: 150px;
+}
+
+.review-box {
+   padding-top: 80px;
 }
 .riview-title {
-   margin-top: 142px;
+   
    margin-bottom: 60px;
    color: #02283F;
    text-align: center;
@@ -476,7 +489,6 @@ h1 {
    background-color: #fff;
    box-shadow: 0px 17px 121px rgba(0, 0, 0, 0.06), 0px 2.12866px 15.1511px rgba(0, 0, 0, 0.03);
    border-radius: 64px;
-   
 }
 .slider-text {
    color: #02283F;
@@ -791,7 +803,7 @@ h1 {
       padding-right: 30px;
    }
 }
-/*--------------------------------max-width 1024px----------------------------------*/
+/*-------------------max-width 1024px----------------------------------*/
 
 
 @media (max-width: 1024.98px) {
@@ -912,11 +924,13 @@ h1 {
    }
 
    .cirkel-left {
-      z-index: 0;
+      display: none;
    }
 
    .about-content__box {
-      max-width: 400px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
       z-index: 5;
       margin-top: 220px;
    }
@@ -934,32 +948,38 @@ h1 {
       position: absolute;
       left: 100px;
       margin-top: 114px;
-      margin-left: 146px;
+      margin-left: -16px;
       z-index: 0;
-      filter: blur(5px);
+      filter: blur(8px);
    }
 
    .about-read__more {
-      font-size: 18px;
+      font-size: 16px;
+      box-shadow: 1px 1px 1px  #fff, 
+      0 2px rgba(236, 232, 162, 0.95);
    }
 
    .about-us {
-      text-shadow: 2px 2px 2px  #fff;
+      text-shadow: 2px 2px 2px  #fff, 0 2px rgba(236, 232, 162, 0.95);
    }
 
    .about-text{
       color: #02283F;
-      text-shadow: 1px 1px 1px  #fff;
+      text-shadow: 1px 1px 1px  #fff, 
+      0 2px rgba(236, 232, 162, 0.95);
       font-weight: 700;
+      letter-spacing: 1.1px;
    }
 
-   
+   .footer-container {
+      padding: 0 45px;
+   }
 
    
 }
 
 
-/*----------------------max-width 768px------------------*/
+/*--------------------max-width 768px------------------*/
 @media (max-width: 768.98px) {
    .wrapper{
       background: linear-gradient(rgba(255,249,242,0.6), rgba(255,249,242,0.6)), url(../images/header-image.png);
@@ -1142,6 +1162,7 @@ h1 {
       justify-content: center;
       align-items: center;
       padding: 0 15px;
+      
    }
 
    .hiw-desription {
@@ -1156,19 +1177,112 @@ h1 {
       
    }
 
+   .hiw-title {
+      font-size: 50px;
+   }
+
+   .hiw-description {
+      font-size: 16px;
+   }
+
    .hiw-text {
       font-size: 13px;
       font-weight: 800;
    }
 
    .assorti {
-      left: -125px;
+      left: 10px;
       opacity: .6;
 
    }
 
+   .about-content__box{
+      display: flex;
+   }
+
+   .about-us {
+      font-size: 50px;
+      padding-top: 70px;
+   }
+
+   .about-text {
+      font-size: 16px;
+   }
+
    .about-read__more {
+      padding: 15px 20px;
+      font-size: 16px;
       box-shadow: 1px 1px 2px #fff;
+   }
+
+   .review-container {
+      padding-bottom: 0;
+   }
+
+   .riview-title {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 50px;
+   }
+
+   .review-box {
+      margin-top: 100px;
+   }
+
+   .slider-box {
+      width: 650px;
+      padding: 35px 15px;
+   }
+   .slider-text {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 59px;
+      margin-left: 85px;
+      margin-right: 85px;
+      margin-bottom: 50px
+   }
+
+   .author {
+      width: 85px;
+      height: 85px;
+   }
+
+   .name {
+      font-size: 16px;
+   }
+   .costumer {
+      font-size: 16px;
+   }
+
+   .arrow-right {
+      left: 650px;
+   }
+
+   .logo-block {
+      max-width: 200px;
+   }
+
+   .logo {
+      font-size: 24px;
+   }
+
+   .footer-text {
+      font-size: 15px;
+   }
+
+   .comunity-box, .about-footer__box,
+   .contact-title {
+      font-size: 17px;
+   }
+
+   .for-agents, .for-buyers, .for-sellers,
+   .story, .careers, .meet,
+   .adress, .simply, .roots {
+      font-size: 15px;
+   }
+
+   .rights {
+      font-size: 18px;
    }
 }
 
@@ -1382,6 +1496,31 @@ h1 {
    .option {
       width:50px;
       height: 50px;
+   }
+
+   .assorti {
+      top: -10px;
+      left: -10px;
+   }
+   
+
+}
+
+@media (max-width: 605px) {
+   .footer-container {
+      margin-top: 50px;
+      display: block;
+      text-align: center;
+   }
+   .social-media__box {
+      justify-content: center;
+   }
+   .contact-footer {
+      margin-bottom: 40px;
+   }
+
+   .logo-block {
+      margin: 0 auto;
    }
 
 }
