@@ -790,6 +790,17 @@ h1 {
   .personal {
     display: block;
     max-width: 100%;
+    display: block;
+    padding-left: 15px;
+    margin-left: 15px;
+    padding-bottom: 50px;
+  }
+  .hiw-description {
+    margin-right: 15px;
+  }
+  .about-content__box {
+    margin-left: 15px;
+    padding-left: 15px;
   }
 }
 @media (max-width: 1179px) {
@@ -797,6 +808,10 @@ h1 {
     margin: 0 30px 0 30px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .hiw-box {
+    margin: 0 15px;
+    padding-left: 15px;
   }
 }
 /*-------------------max-width 1024px----------------------------------*/
@@ -1138,8 +1153,8 @@ h1 {
     margin-top: 100px;
   }
   .slider-box {
-    width: 650px;
-    padding: 35px 15px;
+    max-width: 650px;
+    padding: 15px 15px;
   }
   .slider-text {
     font-size: 16px;
@@ -1358,6 +1373,30 @@ h1 {
     top: -10px;
     left: -10px;
   }
+  .slider-box {
+    position: relative;
+    padding: 0 15px;
+    margin: 0 15px;
+    padding: 35px 15px;
+    background-color: #fff;
+    box-shadow: 0px 17px 121px rgba(0, 0, 0, 0.06), 0px 2.12866px 15.1511px rgba(0, 0, 0, 0.03);
+    border-radius: 64px;
+  }
+  .author-area {
+    margin-bottom: 0;
+  }
+  .slider-text {
+    margin: 15px;
+    padding-bottom: 25px;
+  }
+  .arrow-left {
+    top: 360px;
+    left: 70px;
+  }
+  .arrow-right {
+    top: 360px;
+    left: 175px;
+  }
 }
 @media (max-width: 605px) {
   .footer-container {
@@ -1373,5 +1412,35 @@ h1 {
   }
   .logo-block {
     margin: 0 auto;
+  }
+}
+@media (max-width: 426px) {
+  .arrow-left {
+    top: 370px;
+    left: 30px;
+  }
+  .arrow-right {
+    top: 370px;
+    left: 310px;
+  }
+}
+@media (max-width: 376px) {
+  .arrow-left {
+    top: 370px;
+    left: 30px;
+  }
+  .arrow-right {
+    top: 370px;
+    left: 275px;
+  }
+}
+@media (max-width: 321px) {
+  .arrow-left {
+    top: 360px;
+    left: 70px;
+  }
+  .arrow-right {
+    top: 360px;
+    left: 175px;
   }
 }
