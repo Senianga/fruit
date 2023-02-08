@@ -481,7 +481,15 @@ h1 {
    line-height: 82px;
    font-weight: 700;
 }
+.slider {
+   margin-right: 30px;
+   min-width: 0;
+   max-width: 1110px;
+   max-height:600px;
+   position: relative;
+}
 .slider-box {
+   margin: 0, auto;
    position: relative;
    max-width: 886px;
    margin: 0 auto ;
@@ -489,8 +497,26 @@ h1 {
    background-color: #fff;
    box-shadow: 0px 17px 121px rgba(0, 0, 0, 0.06), 0px 2.12866px 15.1511px rgba(0, 0, 0, 0.03);
    border-radius: 64px;
+   
+}
+
+.swiper-wrapper {
+   min-width: 0;
+   margin: 0, auto;
+  
+}
+
+
+
+
+
+.costumer-card {
+   max-width: 886px;
+   // overflow: hidden;
 }
 .slider-text {
+  
+   max-width: 600px;
    color: #02283F;
    margin-top: 89px;
    margin-left: 111px;
@@ -513,6 +539,8 @@ h1 {
    
    width: 100px;
    height: 100px;
+   border-radius: 50%;
+   background-size: cover ;
 }
 .name {
    display: block;
@@ -530,34 +558,50 @@ h1 {
    color: rgba(2, 40, 63, 0.64);
 }
 
-.arrow-left {
+
+
+.arrow-left  {
+   
    background-image: url(../images/arrow-left.svg);
    width: 61px;
    height: 61px;
    position: absolute;
    top: 200px;
-   left: -30px;
+   left: 50px;
    z-index: 15;
    transition: ease-in-out .3s;
 }
 
 .arrow-left:hover {
+   content: "";
    background-image: url(../images/hover-left.svg);
 }
 .arrow-right {
+   border: none;
+   background-color: transparent;
    background-image: url(../images/arrow-right.svg);
    position: absolute;
    width: 61px;
    height: 61px;
    top: 200px;
-   left: 915px;
+   left: 995px;
    z-index: 15;
    transition: ease-in-out .3s;
 }
 
 .arrow-right:hover {
+   content: "";
    background-image: url(../images/hover-right.svg);
 }  
+
+.swiper-button-prev {
+   display: none;
+}
+.swiper-button-next {
+   display: none;
+}
+
+
 
 .footer {
    background-color: #fff;
