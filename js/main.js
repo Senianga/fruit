@@ -1,14 +1,15 @@
-var swiper = new Swiper(".slider", {
+var swiper = new Swiper(".mySwiper", {
    slidesPerView: 1,
    spaceBetween: 30,
+   
    loop: true,
    keyboard : {enabled: true},
    simulateTouch : true,
    touchRatio : 1,
    grabCurcor : true,
    slideToClickedSlide: true,
-   watchOwerfow: true,
-   slidePerGroupe: 3,
+   watchOwerfow: false,
+   // slidePerGroupe: 1,
    // effect: 'flip',
    // flipEffect: {
    //    slideShows: true,

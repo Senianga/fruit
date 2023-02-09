@@ -462,96 +462,121 @@ h1 {
   z-index: 0;
 }
 
-.review-container {
+.review__container {
   background-color: #FFF9F2;
-  height: 750px;
+  height: 100%;
   padding-bottom: 150px;
 }
 
-.review-box {
-  padding-top: 80px;
-}
-
-.riview-title {
-  margin-bottom: 60px;
+.review-title {
+  margin: 0;
   color: #02283F;
-  text-align: center;
   font-size: 70px;
   line-height: 82px;
   font-weight: 700;
+  text-align: center;
+  padding-top: 147px;
+  padding-bottom: 60px;
+  height: 100%;
 }
 
-.slider {
-  margin-right: 30px;
-  min-width: 0;
-  max-width: 1110px;
-  max-height: 600px;
+.review-info__section {
+  max-width: 937px;
+  max-height: 414px;
   position: relative;
+  height: 100%;
 }
 
 .slider-box {
-  margin: 0, auto;
-  position: relative;
-  max-width: 886px;
-  margin: 0 auto;
-  padding: 45px 30px;
+  width: inherit;
+  height: inherit;
+}
+
+.slide {
+  display: block;
   background-color: #fff;
-  box-shadow: 0px 17px 121px rgba(0, 0, 0, 0.06), 0px 2.12866px 15.1511px rgba(0, 0, 0, 0.03);
+  max-width: 826px;
+  max-height: 368px;
+  height: 100%;
   border-radius: 64px;
+  margin-left: 80px;
 }
 
-.swiper-wrapper {
-  min-width: 0;
-  margin: 0, auto;
-}
-
-.costumer-card {
-  max-width: 886px;
-}
-
-.slider-text {
-  max-width: 600px;
+.slide-text {
+  display: block;
+  padding-left: 111px;
+  padding-right: 111px;
+  padding-top: 90px;
+  margin: 0;
   color: #02283F;
-  margin-top: 89px;
-  margin-left: 111px;
-  margin-right: 111px;
-  margin-bottom: 40px;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 1.7;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 170%;
 }
 
-.author-area {
+.slide-costumer__flex {
+  margin: 0, auto;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  gap: 25px;
   align-items: center;
-  margin-bottom: 60px;
+  gap: 1.25rem;
+  margin-bottom: 86px;
+  margin-top: 40px;
 }
 
-.author {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-size: cover;
+.slide-costumer__descriptionflex {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
-.name {
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.04em;
+.slide-costumenr__name {
   color: rgba(2, 40, 63, 0.79);
-}
-
-.costumer {
+  letter-spacing: 0.04em;
   font-size: 18px;
   line-height: 36px;
+  font-weight: 700;
+}
+
+.slide-happy__costumer {
   letter-spacing: 0.04em;
+  font-size: 18px;
+  line-height: 36px;
   color: rgba(2, 40, 63, 0.64);
+}
+
+.slide-picture {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .arrow-left {
@@ -559,14 +584,13 @@ h1 {
   width: 61px;
   height: 61px;
   position: absolute;
-  top: 200px;
+  top: 170px;
   left: 50px;
-  z-index: 15;
+  z-index: 55;
   transition: ease-in-out 0.3s;
 }
 
 .arrow-left:hover {
-  content: "";
   background-image: url(../images/hover-left.svg);
 }
 
@@ -577,23 +601,14 @@ h1 {
   position: absolute;
   width: 61px;
   height: 61px;
-  top: 200px;
-  left: 995px;
-  z-index: 15;
+  top: 170px;
+  left: 875px;
+  z-index: 55;
   transition: ease-in-out 0.3s;
 }
 
 .arrow-right:hover {
-  content: "";
   background-image: url(../images/hover-right.svg);
-}
-
-.swiper-button-prev {
-  display: none;
-}
-
-.swiper-button-next {
-  display: none;
 }
 
 .footer {
@@ -1034,8 +1049,8 @@ h1 {
     box-shadow: 1px 1px 1px #FDB827;
   }
   .btn-span,
-.btn-span::before,
-.btn-span::after {
+  .btn-span::before,
+  .btn-span::after {
     position: absolute;
     top: 50%;
     margin-top: -1px;
@@ -1220,12 +1235,12 @@ h1 {
     font-size: 15px;
   }
   .comunity-box, .about-footer__box,
-.contact-title {
+  .contact-title {
     font-size: 17px;
   }
   .for-agents, .for-buyers, .for-sellers,
-.story, .careers, .meet,
-.adress, .simply, .roots {
+  .story, .careers, .meet,
+  .adress, .simply, .roots {
     font-size: 15px;
   }
   .rights {
@@ -1263,8 +1278,8 @@ h1 {
     box-shadow: 1px 1px 1px #233506;
   }
   .btn-span,
-.btn-span::before,
-.btn-span::after {
+  .btn-span::before,
+  .btn-span::after {
     position: absolute;
     top: 50%;
     margin-top: -1px;
