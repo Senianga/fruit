@@ -1,14 +1,13 @@
 var swiper = new Swiper(".mySwiper", {
    slidesPerView: 1,
    spaceBetween: 10,
-   
    loop: true,
-   keyboard : {enabled: true},
-   simulateTouch : true,
-   touchRatio : 1,
-   grabCurcor : true,
-   slideToClickedSlide: true,
-   watchOwerfow: false,
+   // keyboard : {enabled: true},
+   // simulateTouch : true,
+   // touchRatio : 1,
+   // grabCurcor : true,
+   // slideToClickedSlide: true,
+   // watchOwerfow: false,
    // slidePerGroupe: 1,
    // effect: 'flip',
    // flipEffect: {
@@ -18,14 +17,9 @@ var swiper = new Swiper(".mySwiper", {
    // effect: 'fade',
    // fadeEffect: {crossFade: true},
    // centeredSlides: true,
-
-
-   
    navigation: {
-      nextEl: ".arrow-right",
-      prevEl: ".arrow-left",
-   },
-   
-
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
  });
  
